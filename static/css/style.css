@@ -66,3 +66,109 @@ button:hover{
 
     box-shadow:0px 0px 15px red;
 }
+input{
+
+    width:90%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2f2f2f;
+
+    color:white;
+
+    font-size:15px;
+}
+
+a{
+
+    color:#ff2e63;
+
+    text-decoration:none;
+}
+
+a:hover{
+
+    color:red;
+}
+/* DASHBOARD */
+
+.dashboard{
+
+    width:90%;
+
+    padding:30px;
+
+    text-align:center;
+}
+
+.subtitulo{
+
+    color:white;
+
+    margin-bottom:30px;
+}
+
+/* CREAR CATEGORIA */
+
+.crear-categoria{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+    margin-bottom:40px;
+}
+
+/* TARJETAS */
+
+.contenedor-tarjetas{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+
+    gap:20px;
+}
+
+.tarjeta{
+
+    background:#2b2b2b;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:0px 0px 15px rgba(255,0,0,0.3);
+}
+
+.tarjeta:hover{
+
+    transform:scale(1.05);
+
+    background:#3a3a3a;
+
+    box-shadow:0px 0px 20px red;
+}
+
+.tarjeta h2{
+
+    font-size:20px;
+
+    margin-top:10px;
+}

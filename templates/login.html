@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Navi Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>❤️ Navi ❤️</h1>
+
+        <p>Iniciar Sesión</p>
+
+            <form action="/validar_login" method="POST">
+
+                <input type="text" name="username" placeholder="Usuario" required>
+
+                <input type="password" name="password" placeholder="Contraseña" required>
+
+                <button type="submit">Entrar</button>
+
+            </form>
+
+        <br>
+
+        <a href="/register">Registrarse</a>
+
+    </div>
+
+</body>
+</html>

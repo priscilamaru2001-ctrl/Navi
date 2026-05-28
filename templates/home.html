@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Navi</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>❤️ Navi ❤️</h1>
+
+        <p class="subtitulo">
+            Tu biblioteca virtual personalizada
+        </p>
+
+        <!-- FORMULARIO -->
+        <form action="/crear_categoria" method="POST">
+
+            <div class="crear-categoria">
+
+                <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Nueva categoría"
+                    required
+                >
+
+                <button type="submit">
+                    ➕ Crear
+                </button>
+
+            </div>
+
+        </form>
+
+        <!-- TARJETAS -->
+        <div class="contenedor-tarjetas">
+
+            <div class="tarjeta">
+                📚
+                <h2>Libros</h2>
+            </div>
+
+            <div class="tarjeta">
+                🎬
+                <h2>Películas</h2>
+            </div>
+
+            <div class="tarjeta">
+                📺
+                <h2>Series</h2>
+            </div>
+
+            <div class="tarjeta">
+                🎵
+                <h2>Música</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
